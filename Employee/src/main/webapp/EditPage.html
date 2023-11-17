@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Employee</title>
+</head>
+<body>
+    <h2>Edit Employee</h2>
+    <form action="editEmployee" method="post">
+        <label for="employeeName">Employee Name:</label>
+        <input type="text" id="employeeName" name="employeeName" required><br>
+
+        <label for="designation">Designation:</label>
+        <input type="text" id="designation" name="designation" required><br>
+
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" name="salary" required><br>
+
+        <input type="hidden" id="employeeId" name="employeeId">
+        <!-- Add a hidden field for the employee ID to pass it to the servlet -->
+
+        <input type="submit" value="Update Employee">
+    </form>
+</body>
+</html>

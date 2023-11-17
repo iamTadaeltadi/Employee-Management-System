@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        /* Custom CSS */
+        body {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #007bff; /* Bootstrap primary color */
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745; /* Bootstrap success color */
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838; /* Slightly darker green on hover */
+        }
+    </style>
+
+    <title>Add Employee</title>
+</head>
+<body>
+    <h2>Add Employee</h2>
+    <form action="addemployee" method="post">
+        <label for="employeeName">Employee Name:</label>
+        <input type="text" id="employeeName" name="employeeName" required><br>
+
+        <label for="designation">Designation:</label>
+        <input type="text" id="designation" name="designation" required><br>
+
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" name="salary" required><br>
+
+        <input type="submit" value="Add Employee">
+    </form>
+</body>
+</html>
