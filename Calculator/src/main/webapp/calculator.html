@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body class="container">
+    <form action="operation" method="post">
+
+        <div class="form-group mt-5" style="width: 300px;">
+            <label for="firstnumber">First Number:</label>
+            <input type="text" class="form-control" id="firstnumber" name="num1" placeholder="Enter first number" required>
+        </div>
+        <div class="form-group" style="width: 300px;">
+            <label for="secondnumber">Second Number:</label>
+            <input type="text" class="form-control" id="secondnumber" name="num2" placeholder="Enter second number" required>
+        </div>
+
+        <div class="form-group " style="width: 300px;">
+            <label for="operation">Select Operation:</label>
+            <select class="form-control" id="operation" name="operation" required>
+                <option value="addition">Add</option>
+                <option value="multiplication">Multiply</option>
+            </select>
+        </div>
+
+        <div>
+            <button type="submit" class="btn btn-success text-white">Calculate</button>
+        </div>
+
+    </form>
+</body>
+</html>
